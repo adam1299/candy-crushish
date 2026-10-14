@@ -37,3 +37,8 @@ Ads currently have only an explicit browser QA simulator. Need provider choice, 
 5. Later: store signing, privacy/support material, cloud/paid-currency design and purchases.
 
 After each implementation: add the next numbered Markdown note and update the root index. Run the full suite and record exact remaining gaps.
+
+## Git delivery
+Initial local commit: `e1615c1`. A follow-up documentation/whitespace cleanup records this delivery state. Remote push was attempted and failed before authentication: sandbox denial (`0xC0000022`) in Git Credential Manager's MSYS helper. No force push or credential workaround attempted. Push from an authenticated host terminal: `git push -u origin main`. Work is safely committed locally; do not assume GitHub has the files.
+
+Standalone desktop deliverable was also copied to `../Weather-Workshop.html` beside the local repository for easy opening. The repository's `dist/` copy is generated and ignored by Git.

@@ -18,4 +18,4 @@ Read `AGENTS.md`, this index, and the latest milestone. Run `node --test`. Prese
 `npm ci`, `npm test`, `npm start`. To open directly: `npm run build`, then open `dist/Weather-Workshop.html`. To update native hosts: `npm run sync`.
 
 ## Repository state
-Initial implementation prepared in the local clone of `https://github.com/adam1299/candy-crushish`. See Git history/status for commit and push state; never assume local files reached GitHub from this note alone.
+Initial implementation committed locally (`e1615c1`, followed by final handoff cleanup) in the clone of `https://github.com/adam1299/candy-crushish`. **Push failed:** the execution sandbox denied Git Credential Manager's MSYS named-object operation (0xC0000022), so Git could not authenticate. Files have not been confirmed on GitHub. Run `git push -u origin main` from a normal authenticated terminal in this repository. Commit identity is the explicit agent identity `Codex <codex@localhost>`, not an inferred user identity.
