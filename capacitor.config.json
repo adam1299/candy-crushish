@@ -1,0 +1,6 @@
+{
+  "appId": "com.adam1299.weatherworkshop",
+  "appName": "Weather Workshop",
+  "webDir": "dist",
+  "backgroundColor": "#10112b"
+}

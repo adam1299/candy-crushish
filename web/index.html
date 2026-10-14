@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#10112c">
+  <meta name="description" content="Match the elements. Unleash the storm. A bright weather-powered puzzle adventure.">
+  <title>Weather Workshop — Unleash the storm</title>
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="sky" aria-hidden="true"><i></i><i></i><i></i></div>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Weather Workshop home"><span class="brand-mark">ϟ</span><span>WEATHER<span class="brand-second">WORKSHOP</span></span></a>
+    <div class="top-actions"><span class="wallet" title="Coins"><span class="coin">ϟ</span><b id="coins">150</b></span><button id="settings" class="icon-button" aria-label="Settings">⚙</button></div>
+  </header>
+  <main class="layout">
+    <aside class="story-panel">
+      <div class="eyebrow"><span class="live-dot"></span> A LITTLE CHAOS. A LOT OF THUNDER.</div>
+      <h1>Make a<br>little <em>storm.</em></h1>
+      <p class="intro">Match the elements.<br>Charge the sky. Let it all loose.</p>
+      <div class="storm-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="cloud cloud-back"></div><div class="cloud cloud-front"></div><div class="hero-bolt">ϟ</div><div class="rain rain-one"></div><div class="rain rain-two"></div><div class="spark spark-one">✦</div><div class="spark spark-two">✧</div></div>
+      <div class="world-card"><span class="eyebrow">YOUR EXPEDITION</span><h2 id="region-name">Thunderhead Isles</h2><div class="world-track"><span id="world-progress"></span></div><div class="world-caption"><span id="region-progress">Level 1 of 20</span><span>5 worlds · 100 levels</span></div><button id="map-button" class="text-button">Explore the storm map <span>↗</span></button></div>
+    </aside>
+    <section class="game-panel" aria-label="Weather match-three game">
+      <div class="game-heading"><button id="level-button" class="level-label" aria-label="Choose level"><span class="tiny-bolt">ϟ</span><span>LEVEL <b id="level-number">01</b></span><span class="chevron">⌄</span></button><span id="level-title">First spark</span><button id="help" class="help-button" aria-label="How to play">?</button></div>
+      <div class="mission-bar"><div class="mission-score"><span class="stat-label">STORM ENERGY</span><div><strong id="score">0</strong><span id="score-target"> / 1,000</span></div><div class="energy-track"><span id="energy-progress"></span></div></div><div id="objectives" class="objectives"></div><div class="moves-stat"><strong id="moves">28</strong><span class="stat-label">MOVES</span></div></div>
+      <div class="board-wrap"><div id="board" class="board" aria-label="Weather board"></div><div id="combo" class="combo" aria-hidden="true"></div></div>
+      <div class="board-caption"><span id="status" role="status" aria-live="polite">Swap neighbors to match 3 weather pieces.</span><button id="hint" class="text-button" aria-label="Show a possible move">Hint <span>✧</span></button></div>
+      <div class="booster-heading"><span class="stat-label">A LITTLE EXTRA POWER</span><span id="booster-count">2 uses left this level</span></div>
+      <div id="boosters" class="boosters"></div>
+      <div class="game-footer"><button id="restart" class="text-button">↻ Restart level</button><span>Match 4 or 5 for a supercharged piece.</span></div>
+    </section>
+    <aside class="tips-panel"><div class="tip-card"><span class="eyebrow">THE FORECAST</span><h3>High chance<br>of chain reactions.</h3><div class="tip-icons" id="tip-icons"></div><p>Match 4 for lightning.<br>Match 5 for a color blast.<br>Cross matches for a burst.</p><span class="tip-foot">BIG MATCHES. BIGGER ENERGY.</span></div><div class="small-tip"><span>✦</span><p>Boosters help in a pinch.<br>Your best power is a good match.</p></div></aside>
+  </main>
+  <footer class="page-footer"><span>WEATHER WORKSHOP</span><span>Handcrafted chaos. Forecast: electric.</span><span id="build-label">EARLY ACCESS · 0.1</span></footer>
+  <dialog id="dialog"><button class="dialog-close" aria-label="Close dialog">×</button><div id="dialog-content"></div></dialog>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
